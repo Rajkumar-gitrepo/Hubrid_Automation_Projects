@@ -1,0 +1,7 @@
+com\qa\testCases\RegistrationPageTestCase_TC2.class
+com\qa\utilities\XLUtils.class
+com\qa\utilities\ExtenReportAndListenersImplementations.class
+com\qa\pageObjects\LoginPage.class
+com\qa\pageObjects\BaseClass.class
+com\qa\utilities\Actions.class
+com\qa\testCases\LoginPageTestCase_TC1.class
