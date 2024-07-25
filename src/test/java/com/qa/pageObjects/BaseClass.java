@@ -4,24 +4,25 @@ import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	public static  WebDriver driver;
+	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	public Logger logger;
 	public Properties pro;
 	public FileInputStream fis;
@@ -32,6 +33,11 @@ public class BaseClass {
 	public static Date date = new Date();
 	public static String actualDate = sdf.format(date);
 	
+	public static WebDriver getDriver()
+	{
+		return driver.get();
+	}
+
 	@Parameters("browser")
 	@BeforeClass
 	public void setup(String browser) {
@@ -45,30 +51,38 @@ public class BaseClass {
 
 			if ((browser.equals("chrome"))) {
 				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-				driver.get(pro.getProperty("baseURL"));
+				driver.set(new ChromeDriver());
 				logger.info("URL is entered");
-				driver.manage().window().maximize();
+				getDriver().manage().window().maximize();
 				logger.info("Chrome-Browser::Maximizing the window");
-			
+
 			} else if (browser.equals("firefox")) {
 				WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
-				driver.get(pro.getProperty("baseURL"));
+				driver.set(new FirefoxDriver());
+
+				//driver.get(pro.getProperty("baseURL"));
 				logger.info("URL is entered");
-				driver.manage().window().maximize();
+				getDriver().manage().window().maximize();
 				logger.info("Firefox-Browser::Maximizing the window");
+			} 
+			
+			else if (browser.equals("edge")) {
+				WebDriverManager.edgedriver().setup();
+				driver.set(new EdgeDriver());
+				logger.info("URL is entered");
+				getDriver().manage().window().maximize();
+				logger.info("Edge-Browser::Maximizing the window");
 			} else {
 				logger.info("Browser choice is not mentioned properly");
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
+		getDriver().get(pro.getProperty("baseURL"));
 	}
-	
-	
+
 	@AfterClass
 	public void tearDown() {
-		driver.close();
+		getDriver().close();
 	}
 }

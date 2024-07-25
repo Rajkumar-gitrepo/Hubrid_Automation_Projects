@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-26T07:53:16 IST" name="ECommerce_Project_ChromeBrowser" finished-at="2024-06-26T07:53:30 IST" duration-ms="14187">
+  <suite started-at="2024-07-25T21:06:39 IST" name="ECommerce_Project_ChromeBrowser" finished-at="2024-07-25T21:07:10 IST" duration-ms="30992">
     <groups>
     </groups>
-    <test started-at="2024-06-26T07:53:16 IST" name="LoginTest" finished-at="2024-06-26T07:53:30 IST" duration-ms="14187">
+    <test started-at="2024-07-25T21:06:39 IST" name="LoginTest-Chrome" finished-at="2024-07-25T21:07:03 IST" duration-ms="24108">
       <class name="com.qa.testCases.LoginPageTestCase_TC1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@7188af83]" started-at="2024-06-26T07:53:16 IST" name="setup" finished-at="2024-06-26T07:53:22 IST" duration-ms="5695" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@17fc391b]" started-at="2024-07-25T21:06:40 IST" name="setup" finished-at="2024-07-25T21:06:45 IST" duration-ms="5185" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@7188af83]" started-at="2024-06-26T07:53:23 IST" name="loginTest" data-provider="LoginData" finished-at="2024-06-26T07:53:24 IST" duration-ms="991" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@17fc391b]" started-at="2024-07-25T21:06:49 IST" name="loginTest" data-provider="LoginData" finished-at="2024-07-25T21:06:52 IST" duration-ms="2850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testemail123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@17fc391b]" started-at="2024-07-25T21:06:52 IST" name="loginTest" data-provider="LoginData" finished-at="2024-07-25T21:06:53 IST" duration-ms="1752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testemail123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@17fc391b]" started-at="2024-07-25T21:06:53 IST" name="loginTest" data-provider="LoginData" finished-at="2024-07-25T21:06:57 IST" duration-ms="3834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,45 +66,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@7188af83]" started-at="2024-06-26T07:53:24 IST" name="loginTest" data-provider="LoginData" finished-at="2024-06-26T07:53:25 IST" duration-ms="783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testemail123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@7188af83]" started-at="2024-06-26T07:53:25 IST" name="loginTest" data-provider="LoginData" finished-at="2024-06-26T07:53:26 IST" duration-ms="817" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testemail123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@7188af83]" started-at="2024-06-26T07:53:26 IST" name="tearDown" finished-at="2024-06-26T07:53:26 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@17fc391b]" started-at="2024-07-25T21:06:57 IST" name="tearDown" finished-at="2024-07-25T21:06:58 IST" duration-ms="534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testCases.LoginPageTestCase_TC1 -->
       <class name="com.qa.testCases.RegistrationPageTestCase_TC2">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@17fc391b]" started-at="2024-06-26T07:53:26 IST" name="setup" finished-at="2024-06-26T07:53:29 IST" duration-ms="2841" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@73eb439a]" started-at="2024-07-25T21:06:58 IST" name="setup" finished-at="2024-07-25T21:07:01 IST" duration-ms="3357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,15 +83,103 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registerTest()[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@17fc391b]" started-at="2024-06-26T07:53:29 IST" name="registerTest" finished-at="2024-06-26T07:53:30 IST" duration-ms="775" status="PASS">
+        <test-method signature="registerTest()[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@73eb439a]" started-at="2024-07-25T21:07:01 IST" name="registerTest" finished-at="2024-07-25T21:07:03 IST" duration-ms="1443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@17fc391b]" started-at="2024-06-26T07:53:30 IST" name="tearDown" finished-at="2024-06-26T07:53:30 IST" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@73eb439a]" started-at="2024-07-25T21:07:03 IST" name="tearDown" finished-at="2024-07-25T21:07:03 IST" duration-ms="955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testCases.RegistrationPageTestCase_TC2 -->
-    </test> <!-- LoginTest -->
+    </test> <!-- LoginTest-Chrome -->
+    <test started-at="2024-07-25T21:06:39 IST" name="LoginTest-Firefox" finished-at="2024-07-25T21:07:10 IST" duration-ms="30992">
+      <class name="com.qa.testCases.LoginPageTestCase_TC1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@3ad83a66]" started-at="2024-07-25T21:06:39 IST" name="setup" finished-at="2024-07-25T21:06:50 IST" duration-ms="10872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@3ad83a66]" started-at="2024-07-25T21:06:51 IST" name="loginTest" data-provider="LoginData" finished-at="2024-07-25T21:06:53 IST" duration-ms="1751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testemail123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@3ad83a66]" started-at="2024-07-25T21:06:53 IST" name="loginTest" data-provider="LoginData" finished-at="2024-07-25T21:06:54 IST" duration-ms="1115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testemail123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@3ad83a66]" started-at="2024-07-25T21:06:54 IST" name="loginTest" data-provider="LoginData" finished-at="2024-07-25T21:06:55 IST" duration-ms="1037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testemail123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.LoginPageTestCase_TC1@3ad83a66]" started-at="2024-07-25T21:06:55 IST" name="tearDown" finished-at="2024-07-25T21:06:58 IST" duration-ms="2841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testCases.LoginPageTestCase_TC1 -->
+      <class name="com.qa.testCases.RegistrationPageTestCase_TC2">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@3cce5371]" started-at="2024-07-25T21:06:58 IST" name="setup" finished-at="2024-07-25T21:07:07 IST" duration-ms="8454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerTest()[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@3cce5371]" started-at="2024-07-25T21:07:07 IST" name="registerTest" finished-at="2024-07-25T21:07:08 IST" duration-ms="1482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.RegistrationPageTestCase_TC2@3cce5371]" started-at="2024-07-25T21:07:08 IST" name="tearDown" finished-at="2024-07-25T21:07:10 IST" duration-ms="2164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testCases.RegistrationPageTestCase_TC2 -->
+    </test> <!-- LoginTest-Firefox -->
   </suite> <!-- ECommerce_Project_ChromeBrowser -->
 </testng-results>

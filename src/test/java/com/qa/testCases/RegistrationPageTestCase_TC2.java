@@ -10,7 +10,7 @@ public class RegistrationPageTestCase_TC2 extends BaseClass {
 	@Test
 	public void registerTest()
 	{
-		rp = new RegisterPage(driver);
+		rp = new RegisterPage();
 		rp.registrationLink();
 	}
 }

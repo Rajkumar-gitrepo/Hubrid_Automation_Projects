@@ -16,14 +16,14 @@ public class LoginPageTestCase_TC1 extends BaseClass {
 
 	@Test(dataProvider = "LoginData")
 	public void loginTest(String user, String pwd) {
-		lp = new LoginPage(driver);
+		lp = new LoginPage();
 		lp.setEmail(user);
 		logger.info("Email id is entered");
 		lp.setPassword(pwd);
 		logger.info("Password  is entered");
 		lp.loginButtonClick();
 		logger.info("clicked on Login Button");
-		String titleOfPage = driver.getTitle();
+		String titleOfPage = getDriver().getTitle();
 		Assert.assertTrue(titleOfPage.equals("nopCommerce demo store. Login"));
 	}
 
